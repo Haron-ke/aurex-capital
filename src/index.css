@@ -562,3 +562,379 @@ footer p {
     font-size: 34px;
   }
     }
+/* =========================================
+   AUREX CAPITAL — AUTHENTICATION UI
+   ========================================= */
+
+.auth-app {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 184, 77, 0.08), transparent 30%),
+    radial-gradient(circle at 85% 80%, rgba(255, 184, 77, 0.05), transparent 30%),
+    #080b10;
+}
+
+.auth-layout {
+  min-height: calc(100vh - 78px);
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 70px 28px;
+  display: grid;
+  grid-template-columns: 1fr 460px;
+  align-items: center;
+  gap: 90px;
+}
+
+.auth-intro {
+  max-width: 620px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  color: #aeb5c0;
+  background: rgba(255, 255, 255, 0.025);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #42d392;
+  box-shadow: 0 0 12px rgba(66, 211, 146, 0.7);
+}
+
+.auth-intro h2 {
+  margin: 28px 0 20px;
+  font-size: clamp(42px, 5vw, 70px);
+  line-height: 1.02;
+  letter-spacing: -2.5px;
+  color: #f4f6f8;
+}
+
+.auth-intro h2 span {
+  display: block;
+  color: #d7a44a;
+}
+
+.auth-intro > p {
+  max-width: 520px;
+  margin: 0;
+  color: #89919d;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.auth-points {
+  margin-top: 34px;
+  display: grid;
+  gap: 15px;
+}
+
+.auth-points div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #c7ccd4;
+  font-size: 14px;
+}
+
+.auth-points svg {
+  color: #d7a44a;
+}
+
+.auth-card {
+  padding: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 20px;
+  background: rgba(15, 19, 26, 0.92);
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.auth-heading {
+  margin-bottom: 28px;
+}
+
+.section-label {
+  color: #d7a44a;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.auth-heading h3 {
+  margin: 9px 0 7px;
+  color: #f2f4f7;
+  font-size: 27px;
+  letter-spacing: -0.7px;
+}
+
+.auth-heading p {
+  margin: 0;
+  color: #7f8792;
+  font-size: 13px;
+}
+
+.input-group {
+  display: block;
+  margin-bottom: 19px;
+}
+
+.input-group > span {
+  display: block;
+  margin-bottom: 8px;
+  color: #b7bec8;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.input-wrap {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 0 14px;
+  border: 1px solid #252b34;
+  border-radius: 10px;
+  background: #0a0e14;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input-wrap:focus-within {
+  border-color: rgba(215, 164, 74, 0.7);
+  box-shadow: 0 0 0 3px rgba(215, 164, 74, 0.08);
+}
+
+.input-wrap svg {
+  flex-shrink: 0;
+  color: #69727e;
+}
+
+.input-wrap input {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #eef1f4;
+  font-size: 14px;
+}
+
+.input-wrap input::placeholder {
+  color: #515a66;
+}
+
+.password-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border: 0;
+  background: transparent;
+  color: #68717d;
+  cursor: pointer;
+}
+
+.password-toggle:hover {
+  color: #d7a44a;
+}
+
+.auth-submit {
+  width: 100%;
+  height: 52px;
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 0;
+  border-radius: 10px;
+  background: #d7a44a;
+  color: #101216;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.auth-submit:hover {
+  filter: brightness(1.08);
+  transform: translateY(-1px);
+}
+
+.auth-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.auth-switch {
+  margin-top: 23px;
+  text-align: center;
+  color: #707986;
+  font-size: 12px;
+}
+
+.auth-switch button {
+  margin-left: 5px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #d7a44a;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form-message {
+  margin: 10px 0 14px;
+  padding: 11px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.form-message.error {
+  border: 1px solid rgba(239, 93, 93, 0.25);
+  background: rgba(239, 93, 93, 0.07);
+  color: #f08a8a;
+}
+
+.form-message.success {
+  border: 1px solid rgba(66, 211, 146, 0.2);
+  background: rgba(66, 211, 146, 0.06);
+  color: #67dca5;
+}
+
+/* =========================================
+   AUREX CAPITAL — DASHBOARD
+   ========================================= */
+
+.dashboard-preview {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 65px 28px;
+}
+
+.dashboard-welcome {
+  margin-bottom: 30px;
+}
+
+.dashboard-welcome h2 {
+  margin: 8px 0;
+  color: #f2f4f7;
+  font-size: clamp(30px, 5vw, 46px);
+  letter-spacing: -1.5px;
+}
+
+.dashboard-welcome h2 span {
+  color: #d7a44a;
+}
+
+.dashboard-welcome p {
+  margin: 0;
+  color: #7f8792;
+}
+
+.dashboard-card {
+  max-width: 600px;
+}
+
+.live-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #61d99e;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.live-badge i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #61d99e;
+  box-shadow: 0 0 9px rgba(97, 217, 158, 0.7);
+}
+
+.dashboard-next {
+  max-width: 600px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.dashboard-next > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 12px;
+}
+
+.dashboard-next svg {
+  grid-row: span 2;
+  color: #d7a44a;
+}
+
+.dashboard-next strong {
+  color: #dfe3e8;
+  font-size: 13px;
+}
+
+.dashboard-next p {
+  margin: 5px 0 0;
+  color: #727b87;
+  font-size: 12px;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 850px) {
+  .auth-layout {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding-top: 45px;
+  }
+
+  .auth-intro {
+    max-width: 700px;
+  }
+
+  .auth-card {
+    max-width: 560px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .auth-layout {
+    padding: 35px 18px 50px;
+  }
+
+  .auth-card {
+    padding: 25px 20px;
+    border-radius: 16px;
+  }
+
+  .auth-intro h2 {
+    font-size: 42px;
+    letter-spacing: -1.8px;
+  }
+
+  .dashboard-preview {
+    padding: 40px 18px;
+  }
+}
