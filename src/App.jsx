@@ -1,4 +1,5 @@
  import { useEffect, useState } from "react";
+console.log("AUREX APP LOADED");
 import {
   ArrowRight,
   Eye,
